@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./components/Header/Header";
 
 export const metadata: Metadata = {
   title: "Li-Ming Hillman Portfolio",
@@ -13,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {/* <p className="fixed top-5 text-white mix-blend-difference">hello</p> */}
+
+        {children}
+      </body>
     </html>
   );
 }
