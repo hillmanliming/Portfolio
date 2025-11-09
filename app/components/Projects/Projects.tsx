@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="projects-container mx-28 grid grid-cols-2 gap-3 max-lg:mx-10 max-md:mx-3 max-md:grid-cols-1">
+    <div className="projects-container grid grid-cols-2 gap-3 px-28 max-lg:px-10 max-md:grid-cols-1 max-md:px-3">
       <article>
         <Link href={"/projects/defensie"}>
           <Image
             className="project-img-hover"
             src="/defensie-mb.avif"
-            alt="Logo"
+            alt="Defensie"
             width={2000}
             height={1500}
             priority
@@ -22,7 +22,7 @@ export default function Projects() {
           <Image
             className="project-img-hover"
             src="/hornemannhuis-green.avif"
-            alt="Logo"
+            alt="Hornemannhuis"
             width={2000}
             height={1500}
             priority
