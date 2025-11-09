@@ -1,33 +1,25 @@
+"use client;";
 import Image from "next/image";
-import styles from "./header.module.css";
-function Header() {
+import Link from "next/link";
+export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-transparent p-8">
-      <nav>
-        <ul className="flex items-center justify-between">
+    <header className="w-screen px-8 pt-6 sm:px-10 md:px-16 lg:px-28">
+      <nav className="flex items-center justify-between">
+        <Link href="/">
+          <Image src="/Logo.svg" alt="Logo" width={21} height={30} priority />
+        </Link>
+
+        <ul className="flex gap-6 font-medium">
           <li>
-            <a href="">
-              <Image
-                src="/Logo.svg"
-                alt="Logo"
-                width={21}
-                height={30}
-                priority
-              />
-            </a>
-          </li>
-          <li className="flex gap-9 bg-transparent px-6 py-3">
-            <a className="text-white mix-blend-difference" href="">
+            <Link
+              href="/about"
+              className="transition-color duration-200 hover:text-gray-500"
+            >
               About
-            </a>
-            <a className="text-white mix-blend-difference" href="">
-              Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
     </header>
   );
 }
-
-export default Header;

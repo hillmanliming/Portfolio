@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Li-Ming Hillman Portfolio",
@@ -13,12 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-white">
       <body>
         <Header />
-        {/* <p className="fixed top-5 text-white mix-blend-difference">hello</p> */}
-
         {children}
+        <Footer />
       </body>
     </html>
   );

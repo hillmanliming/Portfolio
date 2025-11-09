@@ -1,21 +1,25 @@
+import Link from "next/link";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
+import Carousel from "./components/Carousel/Carousel";
+
 export default function Home() {
   return (
     <div>
-      <main className="flex h-[95vh] flex-col items-center justify-center bg-white">
-        <h1 className="text-[200px] max-2xl:text-[180px] max-xl:text-[140px]">
-          SIMPLICITY
+      <main className="mx-6 flex h-[85vh] flex-col items-center justify-center gap-30">
+        <h1 className="text-center text-7xl">
+          For those who want to keep things simple.
         </h1>
-        <p className="text-base italic">
-          "...the three pillars of my development philosophy. Qualities that I
-          believe perfectly capture the expectations of modern web development.”
-        </p>
-        <p>Li-Ming Hillman</p>
+        <Link
+          href="/contact"
+          className="transition-ease-in-out rounded-4xl border-2 border-black bg-black px-6 py-3 font-medium text-white transition-colors duration-250 hover:border-2 hover:bg-white hover:text-black"
+        >
+          Contact
+        </Link>
       </main>
-      <section className="h-screen bg-black p-20 text-center text-white">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        laboriosam amet dolorum iure, voluptate ex quis sequi alias ipsa vel hic
-        laborum sint rem labore quasi beatae repudiandae iusto animi?
-      </section>
+      <Projects />
+      {/* Carousel progress 
+      {/* <Carousel /> */}
     </div>
   );
 }
