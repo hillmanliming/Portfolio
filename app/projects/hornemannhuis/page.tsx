@@ -13,17 +13,18 @@ export default function Hornemannhuis() {
             siblings who passed away in World War II. In order to educate the
             younger generation about their story, I was part of a three man
             group who created a web-based interactive video experience. By
-            giving the visitors different kind of dilemma's like the ones people
-            in WW II had to make, they could get a better understanding of the
-            challenges and hardships faced during that time.
+            giving the visitors different kind of dilemma&apos;s like the ones
+            people in WW II had to make, they could get a better understanding
+            of the challenges and hardships faced during that time.
           </p>
           <p className="">
             The users can join the experience by entering a unique code on their
             devices, which connects them to the main video display. After the
-            video has played, the users are prompted to answer dilemma's related
-            to the content Their responses are collected and in real-time and
-            according to the majority vote, the video continues along a specific
-            path. This creates an immersive and participatory experience.
+            video has played, the users are prompted to answer dilemma&apos;s
+            related to the content Their responses are collected and in
+            real-time and according to the majority vote, the video continues
+            along a specific path. This creates an immersive and participatory
+            experience.
           </p>
           <p>
             This project allowed me to enhance my skills in web development and
