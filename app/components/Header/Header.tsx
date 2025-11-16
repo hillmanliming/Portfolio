@@ -9,11 +9,11 @@ export default function Header() {
           <Image src="/Logo.svg" alt="Logo" width={21} height={30} priority />
         </Link>
 
-        <ul className="flex gap-6">
+        <ul>
           <li>
             <Link
               href="/about"
-              className="transition-color duration-200 hover:text-gray-700"
+              className="transition-color text-base duration-400 ease-out hover:text-gray-600"
             >
               About
             </Link>

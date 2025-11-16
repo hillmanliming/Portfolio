@@ -19,99 +19,44 @@ body {
   overflow-x: hidden;
 }
 
-.projects-container article:hover .project-img-hover {
-  transform: scale(1.07);
-  filter: brightness(0.6);
-}
 .projects-container article {
   overflow: hidden;
   display: inline-block;
 }
 
-.project-img-hover {
-  transition: 0.4s ease-in-out;
+.project-image {
+  transition: 0.4s ease-out;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
-.coming-soon {
-  display: grid;
-  place-items: center;
-  height: 100%;
-  font-size: 1.5rem;
-  color: gray;
-}
 
-.footer p {
-  font-size: clamp(0.625rem, 1vw + 1rem, 2.25rem);
-  justify-content: space-between;
-}
+/* img ===================== */
 
-/* Hero buttons =============== */
-
-.copy-button {
+.project-image-wrapper {
   position: relative;
-}
-.copy-button::after {
-  content: "Copied!";
-  visibility: hidden;
-  height: 0;
   overflow: hidden;
-  display: block;
 }
 
-/* CAROUSSEL ===================== */
-.carousel-container {
-  border: 2px solid rgb(134, 75, 75);
-  margin: 50px auto;
-  width: 90%;
-  display: flex;
-  overflow-x: auto;
+.project-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
 }
 
-.carousel-container::-webkit-scrollbar {
-  display: none;
+.project-image-wrapper:hover .project-title {
+  opacity: 1;
 }
 
-.group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  animation: test 10s linear infinite;
-  padding-right: 1rem;
-}
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 5em;
-  padding: 1rem;
-  background-color: cornflowerblue;
-  font-size: 1.5rem;
-  border-radius: 5px;
-  height: 100%;
-  width: auto;
-}
-
-.carousel-item {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-  background-color: red;
-  padding: 20px;
-}
-
-@keyframes test {
-  from {
-    translate: 0;
-  }
-  to {
-    translate: -100%;
-  }
+.project-card:hover .project-image {
+  transform: scale(1.05);
+  filter: brightness(0.5);
 }
