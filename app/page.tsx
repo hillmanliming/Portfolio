@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Projects from "./components/Projects/Projects";
 
 export default function Home() {
@@ -9,12 +8,12 @@ export default function Home() {
           For those who want to keep things simple.
         </h1>
         <div className="flex gap-6">
-          <Link
+          <a
             href="mailto:contact@liminghillman.com"
             className="transition-ease-in-out rounded-4xl border-2 border-black px-6 py-3 font-medium text-black transition-colors duration-400 ease-out hover:border-2 hover:bg-black hover:text-white"
           >
             Email me
-          </Link>
+          </a>
         </div>
       </main>
       <Projects />

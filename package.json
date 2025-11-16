@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
-    "lint:fix": "next lint --fix"
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "^16.0.1",
